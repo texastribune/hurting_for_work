@@ -1,0 +1,471 @@
+body {
+	background-color: $white;
+	overflow-x: hidden;
+}
+.container {
+	background: $white;
+	max-width: 100%;
+	color: $dk_gray;
+	font: 500 1.1em Georgia 100%;
+	line-height: 1.4em;
+	text-align: left;
+	overflow-x: hidden;
+	.header-wrapper {
+		position: relative;
+		max-height: 640px;
+		.header-container {
+			position: absolute;
+			max-width: 100%;
+			display: block;
+			vertical-align: middle;
+			text-align: center;
+			max-height: 640px;
+			.page-nav {
+				background-color: $navBlack;
+				height: 2.75em;
+				img {	
+					margin: 0 0.5em 0 0.5em;
+					max-height: 1.5em;
+				}
+				.investigates-logo {
+					margin-top: 0.75em;				
+					float: right;
+					@include media($mobile) {
+						display: none;
+					}
+				}
+				.trib-logo {
+					margin-top: 0.25em;
+					float: left;
+					img {
+						margin-top: 0.5em;
+						max-height: 1.25em;
+					}
+					@include media($mobile) {
+						float: none;
+					}
+				}
+			}
+			.title-container {
+				.title {
+					width: 100%;
+					h1 {
+						color: $white;
+						font-size: 3em;
+						line-height: 1.2em;
+						text-shadow: rgb(0, 0, 0) 3px 3px 0px;
+						font-family: Georgia;
+						@include media($desktop) {
+							font-size: 5em;	
+						}
+					}
+					h2 {
+						color: $white;
+						font: 500 1.5em helvetica;
+						letter-spacing: 1px;
+						line-height: 1.3em;
+						text-align: center;
+						text-shadow: rgb(0, 0, 0) 2px 2px 0px;
+					}
+				}
+			}
+		}
+	}
+	.page-nav-backdrop {
+		background-color: $navBlack;
+		height: 2.75em;
+	}
+	.lead-image {
+		background-repeat: no-repeat;
+		height: 440px;
+		width: 100%;
+		background-position: center center;						
+	}
+	.lead-one {
+		background-image: url(//s3.amazonaws.com/apps.texastribune.org/hurting-for-work/images/tt-overview-001.jpg);
+		@include media($desktop) {
+			background-image: url(//s3.amazonaws.com/apps.texastribune.org/hurting-for-work/images/tt-overview-001.jpg);
+		}
+	}
+	.lead-two {
+		background-image: url(http://www.fillmurray.com/2000/640);
+		@include media($desktop) {
+			background-image: url(http://www.fillmurray.com/2000/440);
+		}
+	}
+	.lead-three {
+		background-image: url(http://www.placekitten.com/2000/640);
+		@include media($desktop) {
+			background-image: url(http://www.placekitten.com/2000/440);
+		}
+	}
+	.lead-four {
+		background-image: url(http://www.placekitten.com/2000/640);
+		@include media($desktop) {
+			background-image: url(http://www.placekitten.com/2000/440);
+		}
+	}
+	hr {
+		border-top: 1px solid $yellow;
+		text-decoration: none;
+	}
+	.story-wrapper {
+		#nav-bar {
+			z-index: 99999;
+			top: 0px;
+			.selected {
+				background: $lt_teal;
+			}
+		}
+		.nav-bar {
+			color: $white;
+			background: $white;
+			font: 500 0.9em Helvetica;
+			letter-spacing: 1px;
+			line-height: 1.2em;
+			text-align: center;
+			position: static;
+			ul {
+				display: block;
+				list-style-type: none;
+				margin: 0;
+				width: 100%;
+				max-width: 1088px;
+				background: $white;
+				li {
+					&:hover {
+						background: $dk_teal;;
+					}
+					img {
+						display: none;
+						@include media($desktop) {
+							display: block;
+							max-width: 100%;
+							width: 100%;
+							margin-top:0;
+						}
+					}
+					@include media($mobile) {
+						margin: 0;
+						height: 3em;
+						background: $dk_teal;;
+						margin: 0.25em 0 0 0;
+					}
+				}
+				.nav-image {
+					width: 100%;
+					float: left;
+					margin-bottom: 0;
+					@include media($mobile) {
+							display: none;
+						}
+				}
+				.nav-link{
+					width: 100%;
+					margin: 0.75em 0;
+				}	
+			}
+			a {
+				color: rgb(0, 0, 0);
+				font-weight: bold;
+				text-decoration: none;
+				text-shadow: none;
+			}
+		}
+		.sticky {
+			max-width: 1088px;
+			width:100%;
+			max-height: 3em;
+			bottom: 3em;
+			ul {
+				display: block;
+				list-style-type: none;
+				margin: 0;
+				border-bottom: 1px solid rgba(10, 10, 10, 0.4);
+				.nav-image {
+					display: none;
+				}
+				li {
+					max-height: 3em;
+					&:hover {
+						background: $dk_teal;;
+					}
+					img {
+						display: none;
+					}
+				}
+				.nav-link {
+					margin: 0.75em 0;
+					height: 3em;
+				}
+			}
+			img {
+				display: none;
+			}
+			@include media ($desktop) {
+				position: fixed;
+				background: rgb(85, 85, 85);
+				max-height: 3em;
+			}	
+		}
+		.margin-top {
+			margin-top: 1em;
+		}
+		.story-container {
+			max-width: 94%;
+			color: $offblack;
+			display: block;
+			border-top: 4px solid $yellow;
+			margin-top: 1.5em;
+			margin-left: 0.5em;
+			color: $dk_gray;
+			font: 500 1em Georgia;
+			line-height: 1.4em;
+			text-align: left;
+			@include media($desktop) {
+				max-width: 100%;
+				margin-left: 0;
+			}
+			h1 { //headline
+				color: $dk_gray;
+				font: 600 2em Helvetica;
+				margin-bottom: 0.6em;
+				text-align: left;
+			}
+			h3 { //paragraph header
+				color: rgb(34, 34, 34);
+				font: 700 0.875em Helvetica;
+				letter-spacing: 1px;
+				line-height: 1.4em;
+				text-align: left;
+				text-transform: uppercase;
+				margin-top: 1em;
+			}
+			.gray-subtext {
+					color: $lt_gray;
+				}
+			.byline { //byline
+				color: rgb(34, 34, 34);
+				font: 400 0.85em Helvetica;
+				text-align: left;
+				a {
+					font-weight: bold;
+				}
+			}
+			hr.yellow {
+				border-top: 1px solid $yellow;
+				text-decoration: none;
+			}
+			hr.gray {
+				border-top: 1px solid $dk_gray;
+				text-decoration: none;
+			}
+			a {
+				color: $teal;
+				text-decoration: none;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+			img {
+				width: 100%;
+			}
+			ul {
+				color: $dk_gray;
+				font: 600 0.875em Helvetica;
+				line-height: 1.875em;
+				text-align: left;
+				@include media($mobile) {
+					line-height: 1.5em;
+				}
+			}
+			.shareline {
+				color: rgb(119, 119, 119);
+				font: 400 0.8em helvetica;
+				line-height: 1.1em;
+				text-align: left;
+				vertical-align: top;
+				margin: 0.75em 0;
+				border-top: 1px solid rgb(204, 204, 204);
+				padding-top: 0.75em;
+				a {
+					text-decoration: none;
+					&:hover {
+						color: rgb(17, 17, 17);
+					}
+				}
+				.fa {
+					color: #666;
+					font-size: 1.5em;
+					display: inline-block;
+					font-family: FontAwesome;
+					font-style: normal;
+					font-weight: normal;
+					line-height: 1;
+					padding-right: 0.5em;
+					-webkit-font-smoothing: antialiased;
+					-moz-osx-font-smoothing: grayscale;
+					float: left;
+					&:hover {
+						color: rgb(17, 17, 17);
+					}
+				}
+				.fa-twitter:before {
+					content: "\f099";
+					border-right: 1px solid #ccc;
+					padding-right: 0.5em;
+				}
+				.fa-facebook:before {
+					content: "\f09a";
+				}
+				p {
+					margin-top: 5px;
+				}
+			}
+			.last-share {
+				border-bottom: 1px solid rgb(204, 204, 204);
+			}
+			.media {
+				margin: 0.5em 0;
+				.caption { //captions
+					color: $lt_gray;
+					font: 500 0.8em Helvetica;
+					text-align: left;
+					margin: 0.5em 0 0 0;
+				}
+			}
+			.prose {
+				.small-block {
+					margin-right: 1em;
+				}
+			}
+			.block-text {
+				border-bottom: 1px solid $yellow;
+				border-top: 1px solid $yellow;
+				position: relative;
+				h2 { //block-quote quote
+					color: $dk_gray;
+					font: italic 700 1.5em Georgia;
+					line-height: 1.3em;
+					position: relative;
+					text-align: left;
+				}
+				p { //block-quote source
+					color: rgb(0, 0, 0);
+					font: 100 1em Helvetica;
+					line-height: 1.3em;
+					text-align: left;
+				}
+				.margin {
+					margin: 0 0.5em;
+				}
+				@include media($mobile) {
+					margin-bottom: 1em;
+				}
+			}
+			.mobile-hide {
+				@include media($mobile) {
+						display: none;
+					}
+			}
+			.about {
+				border-top: 1px solid $yellow;
+				padding: 0.94em 0;
+				position: relative;
+				.handle {
+					font: 300 0.95em Helvetica;
+				}
+				li {
+					margin-bottom: 1em;
+					p {
+						margin: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+.worker-wall {
+	margin: 1em 0;
+	p.subtext {
+		color: $lt_gray;
+		font: 300 0.9em helvetica; 
+		line-height: 1.3em; 
+		text-align: left; 
+		margin: 1em 0;
+	}
+	@include media($desktop) {
+		border-left: 1px solid $yellow;
+		border-top: 1px solid $yellow;
+		padding-left: 1.5em;
+	}
+	.worker-names {
+		font-size: 0.65em;
+		color: $lt_gray;
+		margin: 1em;
+		span.worker:hover {
+			color: $teal;	
+		}
+		span.divider {
+			color: $yellow;
+		}
+	}
+}
+.worker-faces {		
+	p {
+		margin-left: 1em;
+	}	
+}
+
+.footer {
+  background-color: rgb(34, 34, 34);
+  color: $white;
+  font-size: 0.75em;
+  margin-top: 1em;
+  border-top: 4px solid $violet;
+
+  .logo {
+    width: 100px;
+    margin-top: 1em;
+
+    @include media($desktop) {
+      width: 150px;
+      margin-top: 3em;
+    }
+  }
+
+  .app-container {
+    text-align: center;
+
+    @include media($desktop) {
+      div {
+        text-align: left;
+        @include span-columns(4 of 12);
+      }
+    }
+  }
+
+  ul {
+  	list-style: none;
+  	padding: 0;
+    li {
+      margin-bottom: 0.5em;
+      &:first-child {
+        color: #FFC200;
+        font-weight: bold;
+        margin-bottom: 1em;
+      }
+    }
+
+    a {
+      color: rgb(221, 221, 221);
+      text-decoration: none;
+
+      &:hover {
+        color: $white;
+        text-decoration: underline;
+      }
+    }
+  }
+}
