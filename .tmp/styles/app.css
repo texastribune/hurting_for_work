@@ -97,8 +97,7 @@
           float: left;
           display: block;
           margin-right: 3.57866%;
-          width: 48.21067%;
-          padding: 1em; }
+          width: 48.21067%; }
           .story-wrapper .story-container .prose .small-block:last-child {
             margin-right: 0; } }
     .story-wrapper .story-container .media {
@@ -330,6 +329,20 @@ body {
           height: 3em;
           background: rgba(0, 137, 144, 0.9);
           margin: 0.25em 0 0 0; } }
+      .container .story-wrapper .nav-bar ul .inactive p {
+        display: none; }
+      .container .story-wrapper .nav-bar ul .inactive:hover span {
+        display: block;
+        background-color: #333333;
+        height: 166px;
+        width: 253px; }
+      .container .story-wrapper .nav-bar ul .inactive:hover p {
+        display: block;
+        color: #666666;
+        font-weight: bold;
+        padding-top: 4em; }
+      .container .story-wrapper .nav-bar ul .inactive:hover img {
+        display: none; }
       .container .story-wrapper .nav-bar ul .nav-image {
         width: 100%;
         float: left;
@@ -338,18 +351,19 @@ body {
           .container .story-wrapper .nav-bar ul .nav-image {
             display: none; } }
       .container .story-wrapper .nav-bar ul .nav-link {
+        color: black;
+        font-weight: bold;
         width: 100%;
         margin: 0.75em 0; }
     .container .story-wrapper .nav-bar a {
-      color: black;
-      font-weight: bold;
       text-decoration: none;
       text-shadow: none; }
   .container .story-wrapper .sticky {
     max-width: 1088px;
     width: 100%;
     max-height: 3em;
-    bottom: 3em; }
+    bottom: 3em;
+    background: white; }
     .container .story-wrapper .sticky ul {
       display: block;
       list-style-type: none;
@@ -373,6 +387,22 @@ body {
         position: fixed;
         background: #555555;
         max-height: 3em; } }
+    .container .story-wrapper .sticky .sticky_inactive p {
+      display: none; }
+    .container .story-wrapper .sticky .sticky_inactive:hover .nav-link {
+      height: auto;
+      padding: 0.2em; }
+    .container .story-wrapper .sticky .sticky_inactive:hover span {
+      display: block;
+      background-color: #333333;
+      height: 3em;
+      width: 253px;
+      position: absolute; }
+    .container .story-wrapper .sticky .sticky_inactive:hover p {
+      display: block;
+      color: #666666;
+      font-weight: bold;
+      top: -4em; }
   .container .story-wrapper .margin-top {
     margin-top: 1em; }
   .container .story-wrapper .story-container {
@@ -476,8 +506,10 @@ body {
         font: 500 0.8em Helvetica;
         text-align: left;
         margin: 0.5em 0 0 0; }
-    .container .story-wrapper .story-container .prose .small-block {
-      margin-right: 1em; }
+    .container .story-wrapper .story-container .small-block h3 {
+      margin: 1em 0.5em; }
+    .container .story-wrapper .story-container .small-block ul {
+      margin: 1em 0.5em; }
     .container .story-wrapper .story-container .block-text {
       border-bottom: 1px solid #ffc200;
       border-top: 1px solid #ffc200;
@@ -487,14 +519,14 @@ body {
         font: italic 700 1.5em Georgia;
         line-height: 1.3em;
         position: relative;
-        text-align: left; }
+        text-align: left;
+        margin: 1em 0.5em; }
       .container .story-wrapper .story-container .block-text p {
         color: black;
         font: 100 1em Helvetica;
         line-height: 1.3em;
-        text-align: left; }
-      .container .story-wrapper .story-container .block-text .margin {
-        margin: 0 0.5em; }
+        text-align: left;
+        margin: 1em 0.5em; }
       @media screen and (max-width: 480px) {
         .container .story-wrapper .story-container .block-text {
           margin-bottom: 1em; } }

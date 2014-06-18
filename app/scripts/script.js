@@ -3,9 +3,11 @@ $(function () {
 		$stickyEl = $('#nav-bar'),
 		$wrapperEl = $('.story-wrapper'),
 		$headerEl = $('.header'),
+		$inactiveEl = $('.inactive'),
 		elTop = $wrapperEl.offset().top;
 	$window.scroll(function () {
 		$stickyEl.toggleClass('sticky', $window.scrollTop() > elTop);
+		$inactiveEl.toggleClass('inactive', $window.scrollTop() < elTop).addClass('sticky_inactive', $window.scrollTop() < elTop);
 		$headerEl.toggleClass('margin-top', $window.scrollTop() > elTop);
 	});
 

@@ -38,7 +38,7 @@
 			.small-block {
 				@include media($desktop) {
 					@include span-columns(4 of 8);
-					@include pad(1em);
+					// @include pad(1em);
 				}
 			}
 		}

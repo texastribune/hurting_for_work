@@ -152,6 +152,28 @@ body {
 						margin: 0.25em 0 0 0;
 					}
 				}
+				.inactive {
+					p {
+						display: none;
+					}
+					&:hover {
+						span {
+							display: block;
+							background-color: $dk_gray;
+							height: 166px;
+							width: 253px;
+						}
+						p {
+							display: block;
+							color: $lt_gray;
+							font-weight: bold;
+							padding-top: 4em;
+						}
+						img {
+							display: none;
+						}
+					}
+				}
 				.nav-image {
 					width: 100%;
 					float: left;
@@ -160,14 +182,14 @@ body {
 							display: none;
 						}
 				}
-				.nav-link{
+				.nav-link {
+					color: rgb(0, 0, 0);
+					font-weight: bold;
 					width: 100%;
 					margin: 0.75em 0;
 				}	
 			}
 			a {
-				color: rgb(0, 0, 0);
-				font-weight: bold;
 				text-decoration: none;
 				text-shadow: none;
 			}
@@ -177,6 +199,7 @@ body {
 			width:100%;
 			max-height: 3em;
 			bottom: 3em;
+			background: $white;
 			ul {
 				display: block;
 				list-style-type: none;
@@ -206,6 +229,30 @@ body {
 				position: fixed;
 				background: rgb(85, 85, 85);
 				max-height: 3em;
+			}
+			.sticky_inactive {
+				p {
+					display: none;
+				}
+				&:hover {
+					.nav-link {
+						height: auto;
+						padding: 0.2em;
+					}
+					span {
+						display: block;
+						background-color: $dk_gray;
+						height: 3em;
+						width: 253px;
+						position: absolute;
+					}
+					p {
+						display: block;
+						color: $lt_gray;
+						font-weight: bold;
+						top: -4em;
+					}
+				}
 			}	
 		}
 		.margin-top {
@@ -334,9 +381,12 @@ body {
 					margin: 0.5em 0 0 0;
 				}
 			}
-			.prose {
-				.small-block {
-					margin-right: 1em;
+			.small-block {
+				h3 {
+					margin: 1em 0.5em;
+				}
+				ul {
+					margin: 1em 0.5em;
 				}
 			}
 			.block-text {
@@ -349,15 +399,14 @@ body {
 					line-height: 1.3em;
 					position: relative;
 					text-align: left;
+					margin: 1em 0.5em;
 				}
 				p { //block-quote source
 					color: rgb(0, 0, 0);
 					font: 100 1em Helvetica;
 					line-height: 1.3em;
 					text-align: left;
-				}
-				.margin {
-					margin: 0 0.5em;
+					margin: 1em 0.5em;
 				}
 				@include media($mobile) {
 					margin-bottom: 1em;
