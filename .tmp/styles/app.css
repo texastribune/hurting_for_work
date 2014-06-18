@@ -272,10 +272,10 @@ body {
     width: 100%;
     background-position: center center; }
   .container .lead-one {
-    background-image: url(//s3.amazonaws.com/apps.texastribune.org/hurting-for-work/images/tt-overview-001.jpg); }
+    background-image: url(//s3.amazonaws.com/apps.texastribune.org/hurting-for-work/images/tt-workers-LeadArt-template.jpg); }
     @media screen and (min-width: 768px) {
       .container .lead-one {
-        background-image: url(//s3.amazonaws.com/apps.texastribune.org/hurting-for-work/images/tt-overview-001.jpg); } }
+        background-image: url(//s3.amazonaws.com/apps.texastribune.org/hurting-for-work/images/tt-workers-LeadArt-template.jpg); } }
   .container .lead-two {
     background-image: url(http://www.fillmurray.com/2000/640); }
     @media screen and (min-width: 768px) {
