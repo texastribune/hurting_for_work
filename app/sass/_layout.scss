@@ -90,8 +90,11 @@
 	
 
 .app-container {
-  @include outer-container;
-  padding: 0 0.75em;
-   
+	@include outer-container;
+	@include media($desktop) {
+      div {
+        @include span-columns(3 of 12);
+      }
+    }
 }
 	

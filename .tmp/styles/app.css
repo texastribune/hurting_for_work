@@ -195,12 +195,19 @@
 .app-container {
   max-width: 68em;
   margin-left: auto;
-  margin-right: auto;
-  padding: 0 0.75em; }
+  margin-right: auto; }
   .app-container:after {
     content: "";
     display: table;
     clear: both; }
+  @media screen and (min-width: 768px) {
+    .app-container div {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%; }
+      .app-container div:last-child {
+        margin-right: 0; } }
 
 body {
   background-color: white;
@@ -574,41 +581,68 @@ body {
   background-color: #222222;
   color: white;
   font-size: 0.75em;
-  margin-top: 1em;
-  border-top: 4px solid #742e66; }
+  margin-top: 1em; }
   .footer .logo {
     width: 100px;
     margin-top: 1em; }
     @media screen and (min-width: 768px) {
       .footer .logo {
         width: 150px;
-        margin-top: 3em; } }
+        margin-top: 1em; } }
   .footer .app-container {
     text-align: center; }
-    @media screen and (min-width: 768px) {
-      .footer .app-container div {
-        text-align: left;
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 31.76157%; }
-        .footer .app-container div:last-child {
-          margin-right: 0; } }
-  .footer ul {
-    list-style: none;
-    padding: 0; }
-    .footer ul li {
-      margin-bottom: 0.5em; }
-      .footer ul li:first-child {
-        color: #FFC200;
-        font-weight: bold;
-        margin-bottom: 1em; }
-    .footer ul a {
-      color: #dddddd;
-      text-decoration: none; }
-      .footer ul a:hover {
-        color: white;
-        text-decoration: underline; }
+    .footer .app-container div {
+      text-align: left; }
+    .footer .app-container ul {
+      list-style: none;
+      padding: 0; }
+      .footer .app-container ul a {
+        color: #dddddd;
+        text-decoration: none; }
+        .footer .app-container ul a:hover {
+          color: white;
+          text-decoration: underline; }
+      .footer .app-container ul li {
+        margin-bottom: 0.5em; }
+        .footer .app-container ul li:last-child a {
+          color: rgba(0, 137, 144, 0.9); }
+    .footer .app-container .icon {
+      color: white;
+      font-size: 1.5em;
+      display: inline-block;
+      font-family: FontAwesome;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 1;
+      padding-right: 0.5em;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      float: left; }
+    .footer .app-container .donate {
+      background: rgba(0, 137, 144, 0.9);
+      color: white;
+      font-family: Helvetica;
+      padding-bottom: 1em; }
+      .footer .app-container .donate ul {
+        margin: 1.5em 1.5em 0.75em 1.5em;
+        font-size: 1.65em;
+        line-height: 0.9em; }
+        .footer .app-container .donate ul li:last-child {
+          background-color: #ffc200;
+          color: #222222;
+          font: 700 0.5em Helvetica;
+          letter-spacing: 1px;
+          line-height: 1.4em;
+          text-align: center;
+          text-transform: uppercase;
+          margin-top: 1em;
+          padding: 0.25em 0;
+          -moz-border-radius: 3px;
+          -webkit-border-radius: 3px; }
+      .footer .app-container .donate hr {
+        border-top: 1px solid white;
+        text-decoration: none;
+        margin: 1em 2em; }
 
 /*
  * jQuery FlexSlider v2.2.0
