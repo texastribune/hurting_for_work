@@ -157,20 +157,22 @@ body {
 						display: none;
 					}
 					&:hover {
-						span {
-							display: block;
-							background-color: $dk_gray;
-							height: 166px;
-							width: 253px;
-						}
+						// span {
+						// 	display: block;
+						// 	background-color: $dk_gray;
+						// 	height: 3em;
+						// 	width: 100%;
+						// }
 						p {
 							display: block;
-							color: $lt_gray;
+							color: $white;
 							font-weight: bold;
 							padding-top: 4em;
-						}
-						img {
-							display: none;
+							position: absolute;
+							background-color: $dk_gray;
+							padding: 1em;
+							width: 23.23176%;
+							max-width: 253px;
 						}
 					}
 				}
@@ -243,12 +245,12 @@ body {
 						display: block;
 						background-color: $dk_gray;
 						height: 3em;
-						width: 253px;
+						width: 23.2%;
 						position: absolute;
 					}
 					p {
 						display: block;
-						color: $lt_gray;
+						color: $white;
 						font-weight: bold;
 						top: -4em;
 					}
@@ -325,6 +327,13 @@ body {
 				@include media($mobile) {
 					line-height: 1.5em;
 				}
+				li {
+					line-height: 1.4em;
+					margin-bottom: 0.75em;
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
 			}
 			.shareline {
 				color: rgb(119, 119, 119);
@@ -370,7 +379,8 @@ body {
 				}
 			}
 			.last-share {
-				border-bottom: 1px solid rgb(204, 204, 204);
+				border-bottom: 1px solid rgb(204, 204, 204);	
+
 			}
 			.media {
 				margin: 0.5em 0;
@@ -378,7 +388,10 @@ body {
 					color: $lt_gray;
 					font: 500 0.8em Helvetica;
 					text-align: left;
-					margin: 0.5em 0 0 0;
+					margin: 0.25em;
+					@include media($desktop) {
+						margin: 0.25em 0;
+					}
 				}
 			}
 			.small-block {
@@ -388,6 +401,7 @@ body {
 				ul {
 					margin: 1em 0.5em;
 				}
+				margin-bottom: 0.25em;
 			}
 			.block-text {
 				border-bottom: 1px solid $yellow;
@@ -396,10 +410,10 @@ body {
 				h2 { //block-quote quote
 					color: $dk_gray;
 					font: italic 700 1.5em Georgia;
-					line-height: 1.3em;
+					line-height: 1.2em;
 					position: relative;
 					text-align: left;
-					margin: 1em 0.5em;
+					margin: 0.7em 0.5em;
 				}
 				p { //block-quote source
 					color: rgb(0, 0, 0);
@@ -452,7 +466,7 @@ body {
 	.worker-names {
 		font-size: 0.65em;
 		color: $lt_gray;
-		margin: 1em;
+		margin: 1em 0;
 		span.worker:hover {
 			color: $teal;	
 		}
@@ -488,7 +502,8 @@ body {
 		}
 		ul {
 			list-style: none;
-				padding: 0;
+			padding: 0;
+			margin-top: 2em;
 			a {
 			  color: rgb(221, 221, 221);
 			  text-decoration: none;
@@ -528,6 +543,8 @@ body {
 				margin: 1.5em 1.5em 0.75em 1.5em;
 				font-size: 1.65em;
 				line-height: 0.9em;
+				border-bottom: 1px solid $white;
+				letter-spacing: 0.03em;
 				li {
 					&:last-child {
 						background-color: $yellow;
@@ -537,17 +554,12 @@ body {
 						line-height: 1.4em;
 						text-align: center;
 						text-transform: uppercase;
-						margin-top: 1em;
+						margin: 1em 0 1.5em 0;
 						padding: 0.25em 0;
 						-moz-border-radius: 3px;
     					-webkit-border-radius: 3px;
 						}
 				}
-			}
-			hr {
-				border-top: 1px solid $white;
-				text-decoration: none;
-				margin: 1em 2em;
 			}
 		}
 	}

@@ -339,18 +339,16 @@ body {
           margin: 0.25em 0 0 0; } }
       .container .story-wrapper .nav-bar ul .inactive p {
         display: none; }
-      .container .story-wrapper .nav-bar ul .inactive:hover span {
-        display: block;
-        background-color: #333333;
-        height: 166px;
-        width: 253px; }
       .container .story-wrapper .nav-bar ul .inactive:hover p {
         display: block;
-        color: #666666;
+        color: white;
         font-weight: bold;
-        padding-top: 4em; }
-      .container .story-wrapper .nav-bar ul .inactive:hover img {
-        display: none; }
+        padding-top: 4em;
+        position: absolute;
+        background-color: #333333;
+        padding: 1em;
+        width: 23.23176%;
+        max-width: 253px; }
       .container .story-wrapper .nav-bar ul .nav-image {
         width: 100%;
         float: left;
@@ -404,11 +402,11 @@ body {
       display: block;
       background-color: #333333;
       height: 3em;
-      width: 253px;
+      width: 23.2%;
       position: absolute; }
     .container .story-wrapper .sticky .sticky_inactive:hover p {
       display: block;
-      color: #666666;
+      color: white;
       font-weight: bold;
       top: -4em; }
   .container .story-wrapper .margin-top {
@@ -456,7 +454,7 @@ body {
       border-top: 1px solid #333333;
       text-decoration: none; }
     .container .story-wrapper .story-container a {
-      color: #379d92;
+      color: #008990;
       text-decoration: none; }
       .container .story-wrapper .story-container a:hover {
         text-decoration: underline; }
@@ -470,6 +468,11 @@ body {
       @media screen and (max-width: 480px) {
         .container .story-wrapper .story-container ul {
           line-height: 1.5em; } }
+      .container .story-wrapper .story-container ul li {
+        line-height: 1.4em;
+        margin-bottom: 0.75em; }
+        .container .story-wrapper .story-container ul li:last-child {
+          margin-bottom: 0; }
     .container .story-wrapper .story-container .shareline {
       color: #777777;
       font: 400 0.8em helvetica;
@@ -513,11 +516,16 @@ body {
         color: #666666;
         font: 500 0.8em Helvetica;
         text-align: left;
-        margin: 0.5em 0 0 0; }
-    .container .story-wrapper .story-container .small-block h3 {
-      margin: 1em 0.5em; }
-    .container .story-wrapper .story-container .small-block ul {
-      margin: 1em 0.5em; }
+        margin: 0.25em; }
+        @media screen and (min-width: 768px) {
+          .container .story-wrapper .story-container .media .caption {
+            margin: 0.25em 0; } }
+    .container .story-wrapper .story-container .small-block {
+      margin-bottom: 0.25em; }
+      .container .story-wrapper .story-container .small-block h3 {
+        margin: 1em 0.5em; }
+      .container .story-wrapper .story-container .small-block ul {
+        margin: 1em 0.5em; }
     .container .story-wrapper .story-container .block-text {
       border-bottom: 1px solid #ffc200;
       border-top: 1px solid #ffc200;
@@ -525,10 +533,10 @@ body {
       .container .story-wrapper .story-container .block-text h2 {
         color: #333333;
         font: italic 700 1.5em Georgia;
-        line-height: 1.3em;
+        line-height: 1.2em;
         position: relative;
         text-align: left;
-        margin: 1em 0.5em; }
+        margin: 0.7em 0.5em; }
       .container .story-wrapper .story-container .block-text p {
         color: black;
         font: 100 1em Helvetica;
@@ -568,9 +576,9 @@ body {
   .worker-wall .worker-names {
     font-size: 0.65em;
     color: #666666;
-    margin: 1em; }
+    margin: 1em 0; }
     .worker-wall .worker-names span.worker:hover {
-      color: #379d92; }
+      color: #008990; }
     .worker-wall .worker-names span.divider {
       color: #ffc200; }
 
@@ -595,7 +603,8 @@ body {
       text-align: left; }
     .footer .app-container ul {
       list-style: none;
-      padding: 0; }
+      padding: 0;
+      margin-top: 2em; }
       .footer .app-container ul a {
         color: #dddddd;
         text-decoration: none; }
@@ -626,7 +635,9 @@ body {
       .footer .app-container .donate ul {
         margin: 1.5em 1.5em 0.75em 1.5em;
         font-size: 1.65em;
-        line-height: 0.9em; }
+        line-height: 0.9em;
+        border-bottom: 1px solid white;
+        letter-spacing: 0.03em; }
         .footer .app-container .donate ul li:last-child {
           background-color: #ffc200;
           color: #222222;
@@ -635,14 +646,10 @@ body {
           line-height: 1.4em;
           text-align: center;
           text-transform: uppercase;
-          margin-top: 1em;
+          margin: 1em 0 1.5em 0;
           padding: 0.25em 0;
           -moz-border-radius: 3px;
           -webkit-border-radius: 3px; }
-      .footer .app-container .donate hr {
-        border-top: 1px solid white;
-        text-decoration: none;
-        margin: 1em 2em; }
 
 /*
  * jQuery FlexSlider v2.2.0
