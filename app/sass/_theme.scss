@@ -146,35 +146,8 @@ body {
 						}
 					}
 					@include media($mobile) {
-						margin: 0;
-						height: 3em;
 						background: $dk_teal;;
 						margin: 0.25em 0 0 0;
-					}
-				}
-				.inactive {
-					p {
-						display: none;
-					}
-					&:hover {
-						p {
-							display: block;
-							color: $white;
-							font-weight: bold;
-						}
-					}
-					@include media($desktop) {
-						&:hover {
-							p {
-								display: block;
-								padding-top: 4em;
-								position: absolute;
-								background-color: $dk_gray;
-								padding: 1em;
-								width: 23.23176%;
-								max-width: 253px;
-							}
-						}
 					}
 				}
 				.nav-image {
@@ -191,6 +164,34 @@ body {
 					width: 100%;
 					margin: 0.75em 0;
 				}	
+			}
+			.inactive {
+				li {
+					@include media($mobile) {
+						height: 5em;
+					}
+				}
+				p {	
+					display: block;
+					color: $white;
+					font-weight: bold;
+				}
+				@include media($desktop) {
+					p {
+						display: none;
+					}
+					&:hover {
+						p {
+							display: block;
+							padding-top: 4em;
+							position: absolute;
+							background-color: $dk_gray;
+							padding: 1em;
+							width: 23.23176%;
+							max-width: 253px;
+						}
+					}
+				}
 			}
 			a {
 				text-decoration: none;
@@ -470,7 +471,8 @@ body {
 		color: $lt_gray;
 		margin: 1em 0;
 		span.worker:hover {
-			color: $teal;	
+			color: $violet;
+			font-weight: bold;	
 		}
 		span.divider {
 			color: $yellow;
