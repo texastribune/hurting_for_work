@@ -21,5 +21,5 @@ $(document).ready(function() {
 		nextText: " "
 	});
     $('.flexslider').fitVids();
-    
+
 });
