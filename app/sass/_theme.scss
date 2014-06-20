@@ -497,8 +497,11 @@ body {
 
 	.app-container {
 		text-align: center;
+		margin: auto;
 		div {
-		    text-align: left;
+			@include media($desktop) {
+		    	text-align: left;
+			}
 		}
 		ul {
 			list-style: none;
@@ -514,11 +517,6 @@ body {
 			}
 			li {
 			  margin-bottom: 0.5em;
-			  &:last-child {
-				  	a {
-				  		color: $dk_teal;
-			  		}
-	  			}
 			}			
 		}
 		.icon {
@@ -532,13 +530,27 @@ body {
 			padding-right: 0.5em;
 			-webkit-font-smoothing: antialiased;
 			-moz-osx-font-smoothing: grayscale;
-			float: left;
+			@include media($desktop) {
+		    	text-align: left;
+			}
+			&:hover {
+				color: $teal;
+			}
+		}
+		.internal-links {
+			li {
+			  &:last-child {
+				  	a {
+				  		color: $dk_teal;
+			  		}
+	  			}
+			}
 		}
 		.donate {
 			background: $dk_teal;
 			color: $white;
 			font-family: Helvetica;
-			padding-bottom: 1em;
+			padding: 0.25em 0;
 			ul {
 				margin: 1.5em 1.5em 0.75em 1.5em;
 				font-size: 1.65em;
@@ -560,6 +572,14 @@ body {
     					-webkit-border-radius: 3px;
 						}
 				}
+			}
+			a {
+				&:hover {
+					text-decoration: none;
+				}
+			}
+			@include media($desktop) {
+				padding: 0 0 1em 0;
 			}
 		}
 	}

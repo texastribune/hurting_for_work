@@ -598,9 +598,11 @@ body {
         width: 150px;
         margin-top: 1em; } }
   .footer .app-container {
-    text-align: center; }
-    .footer .app-container div {
-      text-align: left; }
+    text-align: center;
+    margin: auto; }
+    @media screen and (min-width: 768px) {
+      .footer .app-container div {
+        text-align: left; } }
     .footer .app-container ul {
       list-style: none;
       padding: 0;
@@ -613,8 +615,6 @@ body {
           text-decoration: underline; }
       .footer .app-container ul li {
         margin-bottom: 0.5em; }
-        .footer .app-container ul li:last-child a {
-          color: rgba(0, 137, 144, 0.9); }
     .footer .app-container .icon {
       color: white;
       font-size: 1.5em;
@@ -625,13 +625,19 @@ body {
       line-height: 1;
       padding-right: 0.5em;
       -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      float: left; }
+      -moz-osx-font-smoothing: grayscale; }
+      @media screen and (min-width: 768px) {
+        .footer .app-container .icon {
+          text-align: left; } }
+      .footer .app-container .icon:hover {
+        color: #008990; }
+    .footer .app-container .internal-links li:last-child a {
+      color: rgba(0, 137, 144, 0.9); }
     .footer .app-container .donate {
       background: rgba(0, 137, 144, 0.9);
       color: white;
       font-family: Helvetica;
-      padding-bottom: 1em; }
+      padding: 0.25em 0; }
       .footer .app-container .donate ul {
         margin: 1.5em 1.5em 0.75em 1.5em;
         font-size: 1.65em;
@@ -650,6 +656,11 @@ body {
           padding: 0.25em 0;
           -moz-border-radius: 3px;
           -webkit-border-radius: 3px; }
+      .footer .app-container .donate a:hover {
+        text-decoration: none; }
+      @media screen and (min-width: 768px) {
+        .footer .app-container .donate {
+          padding: 0 0 1em 0; } }
 
 /*
  * jQuery FlexSlider v2.2.0
