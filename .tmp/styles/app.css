@@ -717,7 +717,7 @@ body {
 .flexslider .slides h4 {
   width: 100%;
   color: #222222;
-  font: 700 1.3em Helvetica;
+  font: 700 1.9em Helvetica;
   text-align: center;
   margin: 1em 0.5em; }
 
@@ -726,7 +726,7 @@ body {
   font: 300 1em helvetica;
   line-height: 1.4em;
   text-align: left;
-  margin: 0 0.5em; }
+  margin: 0.75em 0.5em 0 0.5em; }
 
 .flex-pauseplay span {
   text-transform: capitalize; }
