@@ -157,22 +157,23 @@ body {
 						display: none;
 					}
 					&:hover {
-						// span {
-						// 	display: block;
-						// 	background-color: $dk_gray;
-						// 	height: 3em;
-						// 	width: 100%;
-						// }
 						p {
 							display: block;
 							color: $white;
 							font-weight: bold;
-							padding-top: 4em;
-							position: absolute;
-							background-color: $dk_gray;
-							padding: 1em;
-							width: 23.23176%;
-							max-width: 253px;
+						}
+					}
+					@include media($desktop) {
+						&:hover {
+							p {
+								display: block;
+								padding-top: 4em;
+								position: absolute;
+								background-color: $dk_gray;
+								padding: 1em;
+								width: 23.23176%;
+								max-width: 253px;
+							}
 						}
 					}
 				}
