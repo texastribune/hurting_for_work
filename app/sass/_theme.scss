@@ -470,11 +470,13 @@ body {
 		font-size: 0.65em;
 		color: $lt_gray;
 		margin: 1em 0;
+		font-family: Helvetica;
 		span.worker:hover {
 			color: $teal;
 		}
 		span.divider {
 			color: $yellow;
+			padding: 0 0.3em;
 		}
 	}
 }
