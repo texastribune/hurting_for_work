@@ -82,27 +82,27 @@ body {
 		background-position: center center;						
 	}
 	.lead-one {
-		background-image: url(//s3.amazonaws.com/apps.texastribune.org/hurting-for-work/images/tt-workers-LeadArt-template.jpg);
+		background-image: url(//s3.amazonaws.com/apps.texastribune.org/hurting-for-work/images/tt-workers-Lead-Overview-001.jpg);
 		@include media($desktop) {
-			background-image: url(//s3.amazonaws.com/apps.texastribune.org/hurting-for-work/images/tt-workers-LeadArt-template.jpg);
+			background-image: url(//s3.amazonaws.com/apps.texastribune.org/hurting-for-work/images/tt-workers-Lead-Overview-001.jpg);
 		}
 	}
 	.lead-two {
-		background-image: url(http://www.fillmurray.com/2000/640);
+		background-image: url(//s3.amazonaws.com/apps.texastribune.org/hurting-for-work/images/tt-workers-Lead-Arias-001.jpg);
 		@include media($desktop) {
-			background-image: url(http://www.fillmurray.com/2000/440);
+			background-image: url(//s3.amazonaws.com/apps.texastribune.org/hurting-for-work/images/tt-workers-Lead-Arias-001.jpg);
 		}
 	}
 	.lead-three {
-		background-image: url(http://www.placekitten.com/2000/640);
+		background-image: url(//s3.amazonaws.com/apps.texastribune.org/hurting-for-work/images/tt-workers-Lead-Davis-001.jpg);
 		@include media($desktop) {
-			background-image: url(http://www.placekitten.com/2000/440);
+			background-image: url(//s3.amazonaws.com/apps.texastribune.org/hurting-for-work/images/tt-workers-Lead-Davis-001.jpg);
 		}
 	}
 	.lead-four {
-		background-image: url(http://www.placekitten.com/2000/640);
+		background-image: url(//s3.amazonaws.com/apps.texastribune.org/hurting-for-work/images/tt-workers-Lead-Arias-001.jpg);
 		@include media($desktop) {
-			background-image: url(http://www.placekitten.com/2000/440);
+			background-image: url(//s3.amazonaws.com/apps.texastribune.org/hurting-for-work/images/tt-workers-Lead-Arias-001.jpg);
 		}
 	}
 	hr {
