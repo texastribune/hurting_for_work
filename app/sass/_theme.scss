@@ -82,27 +82,27 @@ body {
 		background-position: center center;						
 	}
 	.lead-one {
-		background-image: url(//s3.amazonaws.com/apps.texastribune.org/hurting-for-work/images/tt-workers-Lead-Overview-001.jpg);
+		background-image: url(../images/tt-workers-Lead-Overview-001.jpg);
 		@include media($desktop) {
-			background-image: url(//s3.amazonaws.com/apps.texastribune.org/hurting-for-work/images/tt-workers-Lead-Overview-001.jpg);
+			background-image: url(../images/tt-workers-Lead-Overview-001.jpg);
 		}
 	}
 	.lead-two {
-		background-image: url(//s3.amazonaws.com/apps.texastribune.org/hurting-for-work/images/tt-workers-Lead-Arias-001.jpg);
+		background-image: url(../images/tt-workers-Lead-Arias-001.jpg);
 		@include media($desktop) {
-			background-image: url(//s3.amazonaws.com/apps.texastribune.org/hurting-for-work/images/tt-workers-Lead-Arias-001.jpg);
+			background-image: url(../images/tt-workers-Lead-Arias-001.jpg);
 		}
 	}
 	.lead-three {
-		background-image: url(//s3.amazonaws.com/apps.texastribune.org/hurting-for-work/images/tt-workers-Lead-Davis-001.jpg);
+		background-image: url(../images/tt-workers-Lead-Davis-001.jpg);
 		@include media($desktop) {
-			background-image: url(//s3.amazonaws.com/apps.texastribune.org/hurting-for-work/images/tt-workers-Lead-Davis-001.jpg);
+			background-image: url(../images/tt-workers-Lead-Davis-001.jpg);
 		}
 	}
 	.lead-four {
-		background-image: url(//s3.amazonaws.com/apps.texastribune.org/hurting-for-work/images/tt-workers-Lead-Arias-001.jpg);
+		background-image: url(../images/tt-workers-Lead-Arias-001.jpg);
 		@include media($desktop) {
-			background-image: url(//s3.amazonaws.com/apps.texastribune.org/hurting-for-work/images/tt-workers-Lead-Arias-001.jpg);
+			background-image: url(../images/tt-workers-Lead-Arias-001.jpg);
 		}
 	}
 	hr {
@@ -471,8 +471,7 @@ body {
 		color: $lt_gray;
 		margin: 1em 0;
 		span.worker:hover {
-			color: $violet;
-			font-weight: bold;	
+			color: $teal;
 		}
 		span.divider {
 			color: $yellow;
