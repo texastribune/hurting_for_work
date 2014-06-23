@@ -25,6 +25,7 @@ $(document).ready(function() {
 
 	// Set up the toggle.
 	$('.read-more-toggle').on('click', function() {
-	  $(this).next('.read-more').toggleClass('hide');
+	  $('.read-more').toggleClass('hide');
+	  $('.read-more-toggle').toggleClass('hide');
 	});
 });
