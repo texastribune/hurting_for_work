@@ -277,7 +277,7 @@ body {
 			font: 500 1em Georgia;
 			line-height: 1.4em;
 			text-align: left;
-			@include media($desktop) {
+			@include media($full_width) {
 				max-width: 100%;
 				margin-left: 0;
 			}
