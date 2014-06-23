@@ -20,7 +20,6 @@ body {
 			vertical-align: middle;
 			text-align: center;
 			max-height: 640px;
-			background: $navBlack;
 			.page-nav {
 				background-color: $navBlack;
 				height: 2.75em;
@@ -80,7 +79,8 @@ body {
 		background-repeat: no-repeat;
 		height: 440px;
 		width: 100%;
-		background-position: center center;						
+		background-position: center center;
+		background-color: $navBlack;						
 	}
 	.lead-one {
 		background-image: url(../images/tt-workers-Lead-Overview-001.jpg);
@@ -435,6 +435,10 @@ body {
 						display: none;
 					}
 			}
+			.disclosure {
+				font: 500 0.95em helvetica; 
+				color: #888;
+			}
 			.about {
 				border-top: 1px solid $yellow;
 				padding: 0.94em 0;
@@ -456,9 +460,9 @@ body {
 .worker-wall {
 	margin: 1em 0;
 	p.subtext {
-		color: $lt_gray;
+		color: rgb(34, 34, 34);
 		font: 300 0.9em helvetica; 
-		line-height: 1.3em; 
+		line-height: 1.4em; 
 		text-align: left; 
 		margin: 1em 0;
 	}
@@ -468,12 +472,13 @@ body {
 		padding-left: 1.5em;
 	}
 	.worker-names {
-		font-size: 0.65em;
 		color: $lt_gray;
 		margin: 1em 0;
-		font-family: Helvetica;
+		font: 400 0.9em Georgia;
+		line-height: 1.3em;
 		span.worker:hover {
-			color: $teal;
+			color: $navBlack;
+			background-color: rgb(240, 240, 240);
 		}
 		span.divider {
 			color: $yellow;
@@ -493,12 +498,8 @@ body {
 	font-size: 0.75em;
 	margin-top: 1em;
 	.logo {
-		width: 100px;
+		width: 120px;
 		margin-top: 1em;
-		@include media($desktop) {
-			width: 150px;
-			margin-top: 1em;
-		}
 	}
 
 	.app-container {
