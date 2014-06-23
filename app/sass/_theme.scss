@@ -132,7 +132,7 @@ body {
 				margin: 0;
 				width: 100%;
 				max-width: 1088px;
-				background: $white;
+				background: $dk_teal;
 				li {
 					&:hover {
 						background: $dk_teal;;
@@ -147,7 +147,7 @@ body {
 						}
 					}
 					@include media($mobile) {
-						background: $dk_teal;;
+						background: $dk_teal;
 						margin: 0.25em 0 0 0;
 					}
 				}
@@ -164,6 +164,9 @@ body {
 					font-weight: bold;
 					width: 100%;
 					margin: 0.75em 0;
+				}
+				@include media($desktop) {
+					background: $white;
 				}	
 			}
 			.inactive {
