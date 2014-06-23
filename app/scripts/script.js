@@ -21,5 +21,10 @@ $(document).ready(function() {
 		nextText: " "
 	});
     $('.flexslider').fitVids();
+    $('.read-more').addClass('hide');
 
+	// Set up the toggle.
+	$('.read-more-toggle').on('click', function() {
+	  $(this).next('.read-more').toggleClass('hide');
+	});
 });
