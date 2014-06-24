@@ -134,8 +134,9 @@ body {
 				margin: 0;
 				width: 100%;
 				max-width: 1088px;
-				background: $dk_teal;
 				li {
+					background: $dk_teal;
+					margin-top: 0.25em;
 					&:hover {
 						background: $dk_teal;;
 					}
@@ -148,9 +149,9 @@ body {
 							margin-top:0;
 						}
 					}
-					@include media($mobile) {
-						background: $dk_teal;
-						margin: 0.25em 0 0 0;
+					@include media($desktop) {
+						background: $white;
+						margin-top: 0;
 					}
 				}
 				.nav-image {
@@ -162,7 +163,7 @@ body {
 						}
 				}
 				.nav-link {
-					color: rgb(0, 0, 0);
+					color: $dk_gray;
 					font-weight: bold;
 					width: 100%;
 					margin: 0.75em 0;
