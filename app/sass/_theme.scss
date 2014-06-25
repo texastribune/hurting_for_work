@@ -357,14 +357,21 @@ body {
 				}
 			}
 			.shareline {
-				color: rgb(119, 119, 119);
-				font: 400 0.8em helvetica;
-				line-height: 1.1em;
-				text-align: left;
-				vertical-align: top;
-				margin: 0.75em 0;
-				border-top: 1px solid rgb(204, 204, 204);
-				padding-top: 0.75em;
+				h3 {
+					padding-bottom: 0.75em;
+					border-bottom: 1px solid rgb(204, 204, 204);
+				}
+				ul {
+					list-style-type: none;
+					color: rgb(119, 119, 119);
+					font: 400 0.8em helvetica;
+					line-height: 1.1em;
+					padding-left: 0;
+					li {
+						border-bottom: 1px solid rgb(204, 204, 204);
+						margin: auto;
+					}
+				}
 				a {
 					text-decoration: none;
 					&:hover {
@@ -382,7 +389,7 @@ body {
 					-webkit-font-smoothing: antialiased;
 					-moz-osx-font-smoothing: grayscale;
 					float: left;
-					padding: 0.5em;
+					padding: 0 0.6em 0 0;
 					&:hover {
 						color: rgb(17, 17, 17);
 					}
@@ -396,13 +403,8 @@ body {
 					content: "\f09a";
 				}
 				p {
-					margin-top: 5px;
-					margin-left: 4.5em;
-				}
-			}
-			.last-share {
-				border-bottom: 1px solid rgb(204, 204, 204);	
 
+				}
 			}
 			.media {
 				margin: 0.5em 0;
