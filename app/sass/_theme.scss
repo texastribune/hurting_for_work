@@ -85,21 +85,21 @@ body {
 		background-color: $navBlack;						
 	}
 	.lead-one {
-		background-image: url(../images/Workers-Art/tt-workers-LeadArt-Todd-5.jpg);
+		background-image: url(../images/leads/tt-workers-LeadArt-Todd-5.jpg);
 		@include media($desktop) {
-			background-image: url(../images/Workers-Art/tt-workers-LeadArt-Todd-5.jpg);
+			background-image: url(../images/leads/tt-workers-LeadArt-Todd-5.jpg);
 		}
 	}
 	.lead-two {
-		background-image: url(../images/Workers-Art/Santiago-Single-Lead.jpg);
+		background-image: url(../images/leads/Santiago.jpg);
 		@include media($desktop) {
-			background-image: url(../images/Workers-Art/Santiago-Single-Lead.jpg);
+			background-image: url(../images/leads/Santiago-Single-Lead.jpg);
 		}
 	}
 	.lead-three {
-		background-image: url(../images/Workers-Art/Crystal-Single-Lead.jpg);
+		background-image: url(../images/leads/Crash-1.jpg);
 		@include media($desktop) {
-			background-image: url(../images/Workers-Art/Crystal-Single-Lead.jpg);
+			background-image: url(../images/leads/Crystal-Single-Lead.jpg);
 		}
 	}
 	.lead-four {
