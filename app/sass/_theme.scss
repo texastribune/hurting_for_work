@@ -476,19 +476,18 @@ body {
 					border-top: 1px solid $yellow;
 					padding-left: 1.5em;
 				}
-				.worker-names {
-					line-height: 1.3em;
+				.worker-names {	
 					ul {
+						line-height: 1em;
 						list-style-type: none;
 						color: $lt_gray;
 						padding-left: 0;
-						font: 400 0.5em Helvetica;
+						font: 400 0.75em Helvetica;
+						margin-bottom: 0.5em;
 						li {
 							&:hover {
-								font-weight: bold;
 								color: $navBlack;
 								background-color: #fce598;
-								letter-spacing: 0.25em;
 							}
 						}
 					}
