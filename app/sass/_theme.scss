@@ -462,39 +462,42 @@ body {
 					}
 				}
 			}
+			.worker-wall {
+				margin: 1em 0;
+				p.subtext {
+					color: rgb(34, 34, 34);
+					font: 300 0.9em helvetica; 
+					line-height: 1.4em; 
+					text-align: left; 
+					margin: 1em 0;
+				}
+				@include media($desktop) {
+					border-left: 1px solid $yellow;
+					border-top: 1px solid $yellow;
+					padding-left: 1.5em;
+				}
+				.worker-names {
+					line-height: 1.3em;
+					ul {
+						list-style-type: none;
+						color: $lt_gray;
+						padding-left: 0;
+						font: 400 0.5em Helvetica;
+						li {
+							&:hover {
+								font-weight: bold;
+								color: $navBlack;
+								background-color: #fce598;
+								letter-spacing: 0.25em;
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 }
 
-.worker-wall {
-	margin: 1em 0;
-	p.subtext {
-		color: rgb(34, 34, 34);
-		font: 300 0.9em helvetica; 
-		line-height: 1.4em; 
-		text-align: left; 
-		margin: 1em 0;
-	}
-	@include media($desktop) {
-		border-left: 1px solid $yellow;
-		border-top: 1px solid $yellow;
-		padding-left: 1.5em;
-	}
-	.worker-names {
-		color: $lt_gray;
-		margin: 1em 0;
-		font: 400 0.75em Helvetica;
-		line-height: 1.3em;
-		span.worker:hover {
-			color: $navBlack;
-			background-color: #fce598;
-		}
-		span.divider {
-			color: $lt_teal;
-			padding: 0 0.3em;
-		}
-	}
-}
 .hide {
 	display: none;
 }

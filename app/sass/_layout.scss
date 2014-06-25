@@ -76,13 +76,13 @@
 	.worker-faces {
 		@include span-columns(12);
 		@include media($desktop) {
-			@include span-columns(6);
+			@include span-columns(8);
 		}
 	}
 	.worker-wall {
 		@include span-columns(12);
 		@include media($desktop) {
-			@include span-columns(6);
+			@include span-columns(4);
 			@include omega();
 		}		
 	}  		
