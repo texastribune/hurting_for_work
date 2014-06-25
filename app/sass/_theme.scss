@@ -302,6 +302,15 @@ body {
 				text-transform: uppercase;
 				margin-top: 1em;
 			}
+			h4 { //button
+				color: $dk_teal;
+				font: 700 0.875em Helvetica;
+				letter-spacing: 1px;
+				line-height: 1.4em;
+				text-align: left;
+				text-transform: uppercase;
+				margin-top: 1em;
+			}
 			.gray-subtext {
 					color: $lt_gray;
 				}
@@ -370,10 +379,10 @@ body {
 					font-style: normal;
 					font-weight: normal;
 					line-height: 1;
-					padding-right: 0.5em;
 					-webkit-font-smoothing: antialiased;
 					-moz-osx-font-smoothing: grayscale;
 					float: left;
+					padding: 0.5em;
 					&:hover {
 						color: rgb(17, 17, 17);
 					}
@@ -482,12 +491,13 @@ body {
 						list-style-type: none;
 						color: $lt_gray;
 						padding-left: 0;
-						font: 400 0.75em Helvetica;
+						font: 400 0.65em Helvetica;
 						margin-bottom: 0.5em;
 						li {
 							&:hover {
 								color: $navBlack;
 								background-color: #fce598;
+								font-weight: bold;
 							}
 						}
 					}
