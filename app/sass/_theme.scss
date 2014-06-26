@@ -230,22 +230,24 @@ body {
 						height: 3em;
 						&:hover {
 							background: $dk_teal;
-							.nav-link {
-								display: none;
-							}
-							p {
-								display: block;
-								color: $white;
-								font-weight: bold;
-								margin-top: 0;
-								padding-top: 0.8em;
-							}
 						}
 					}
 				}
 				.inactive {
 					p {
 						display: none;
+					}
+					&:hover {
+						.nav-link {
+							display: none;
+						}
+						p {
+							display: block;
+							color: $white;
+							font-weight: bold;
+							margin-top: 0;
+							padding-top: 0.8em;
+						}
 					}
 				}	
 			}
