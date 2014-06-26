@@ -55,6 +55,8 @@ body {
 						line-height: 1.2em;
 						text-shadow: rgb(0, 0, 0) 3px 3px 0px;
 						font-family: Georgia;
+						margin: auto;
+						padding: 0.5em 0;
 						@include media($desktop) {
 							font-size: 5em;	
 						}
@@ -66,7 +68,6 @@ body {
 						line-height: 1.3em;
 						text-align: center;
 						text-shadow: rgb(0, 0, 0) 2px 2px 0px;
-						width: 90%;
 						margin: auto;
 					}
 				}
@@ -97,15 +98,15 @@ body {
 		}
 	}
 	.lead-three {
-		background-image: url(../images/leads/Crash-1.jpg);
+		background-image: url(../images/leads/Crystal-Mobile-Crash.jpg);
 		@include media($desktop) {
 			background-image: url(../images/leads/Crystal-Single-Lead.jpg);
 		}
 	}
 	.lead-four {
-		background-image: url(../images/tt-workers-Lead-Arias-001.jpg);
+		background-image: url(../images/leads/Cemetary-1.jpg);
 		@include media($desktop) {
-			background-image: url(../images/tt-workers-Lead-Arias-001.jpg);
+			background-image: url(../images/leads/Cemetary-1.jpg);
 		}
 	}
 	hr {
@@ -113,13 +114,6 @@ body {
 		text-decoration: none;
 	}
 	.story-wrapper {
-		#nav-bar {
-			z-index: 99999;
-			top: 0px;
-			.selected {
-				background: $lt_teal;
-			}
-		}
 		.nav-bar {
 			color: $white;
 			background: $white;
@@ -128,6 +122,9 @@ body {
 			line-height: 1.2em;
 			text-align: center;
 			position: static;
+			.selected {
+				background: $lt_teal;
+			}
 			ul {
 				display: block;
 				list-style-type: none;
@@ -187,17 +184,17 @@ body {
 					p {
 						display: none;
 					}
-					&:hover {
-						p {
-							display: block;
-							padding-top: 4em;
-							position: absolute;
-							background-color: $dk_gray;
-							padding: 1em;
-							width: 23.23176%;
-							max-width: 253px;
-						}
-					}
+					// &:hover {
+					// 	p {
+					// 		display: block;
+					// 		padding-top: 4em;
+					// 		position: absolute;
+					// 		background-color: $dk_gray;
+					// 		padding: 1em;
+					// 		width: 23.23176%;
+					// 		max-width: 253px;
+					// 	}
+					// }
 				}
 			}
 			a {
@@ -205,66 +202,57 @@ body {
 				text-shadow: none;
 			}
 		}
+		.nav-hide {
+			display: none;
+		}
 		.sticky {
-			max-width: 1088px;
-			width:100%;
-			max-height: 3em;
-			bottom: 3em;
-			background: $white;
+			visibility: hidden;
 			ul {
-				display: block;
-				list-style-type: none;
-				margin: 0;
-				border-bottom: 1px solid rgba(10, 10, 10, 0.4);
-				.nav-image {
-					display: none;
-				}
-				li {
-					max-height: 3em;
-					&:hover {
-						background: $dk_teal;;
-					}
-					img {
-						display: none;
-					}
-				}
-				.nav-link {
-					margin: 0.75em 0;
-					height: 3em;
-				}
-			}
-			img {
-				display: none;
+				max-height: 0;
 			}
 			@include media ($desktop) {
+				visibility: visible;
 				position: fixed;
 				background: rgb(85, 85, 85);
 				max-height: 3em;
-			}
-			.sticky_inactive {
-				p {
-					display: none;
-				}
-				&:hover {
-					.nav-link {
-						height: auto;
-						padding: 0.2em;
-					}
-					span {
-						display: block;
-						background-color: $dk_gray;
+				z-index: 99999;
+				top: 0px;
+				max-width: 1088px;
+				width:100%;
+				max-height: 3em;
+				bottom: 3em;
+				background: $white;
+				ul {
+					display: block;
+					list-style-type: none;
+					margin: 0;
+					li {
 						height: 3em;
-						width: 23.2%;
-						position: absolute;
-					}
-					p {
-						display: block;
-						color: $white;
-						font-weight: bold;
-						top: -4em;
+						&:hover {
+							background: $dk_teal;
+							.nav-link {
+								display: none;
+							}
+							p {
+								display: block;
+								color: $white;
+								font-weight: bold;
+								margin-top: 0;
+								padding-top: 0.8em;
+							}
+						}
 					}
 				}
-			}	
+				.inactive {
+					p {
+						display: none;
+					}
+				}	
+			}
+
+		}
+		.nav-images {
+			height: 8em;
 		}
 		.margin-top {
 			margin-top: 1em;

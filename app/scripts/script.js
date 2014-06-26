@@ -1,14 +1,10 @@
 $(function () {
 	var $window = $(window),
-		$stickyEl = $('#nav-bar'),
-		$wrapperEl = $('.story-wrapper'),
-		$headerEl = $('.header'),
-		$inactiveEl = $('.inactive'),
+		$stickyEl = $('.sticky'),
+		$wrapperEl = $('.nav-images'),
 		elTop = $wrapperEl.offset().top;
 	$window.scroll(function () {
-		$stickyEl.toggleClass('sticky', $window.scrollTop() > elTop);
-		$inactiveEl.toggleClass('inactive', $window.scrollTop() < elTop).addClass('sticky_inactive', $window.scrollTop() < elTop);
-		$headerEl.toggleClass('margin-top', $window.scrollTop() > elTop);
+		$stickyEl.toggleClass('nav-hide', $window.scrollTop() < elTop);
 	});
 
 });
