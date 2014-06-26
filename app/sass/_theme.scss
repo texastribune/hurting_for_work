@@ -6,7 +6,7 @@ body {
 	background: $white;
 	max-width: 100%;
 	color: $dk_gray;
-	font: 500 1.1em Georgia 100%;
+	font: 400 1.1em Georgia 100%;
 	line-height: 1.4em;
 	text-align: left;
 	overflow-x: hidden;
@@ -446,11 +446,6 @@ body {
 				@include media($mobile) {
 					margin-bottom: 1em;
 				}
-			}
-			.mobile-hide {
-				@include media($mobile) {
-						display: none;
-					}
 			}
 			.disclosure {
 				font: 500 0.95em helvetica; 
