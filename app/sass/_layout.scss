@@ -1,4 +1,6 @@
-html { -webkit-text-size-adjust: none; /* prevent font scaling in landscape */ }
+html { 
+	-webkit-text-size-adjust: none;
+}
 
 .header-wrapper {
 	@include outer-container();
