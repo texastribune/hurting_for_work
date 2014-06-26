@@ -134,7 +134,7 @@ body {
 				li {
 					background: $dk_teal;
 					margin-top: 0.25em;
-					&:hover {
+					&:active {
 						background: $dk_teal;;
 					}
 					img {
@@ -184,7 +184,7 @@ body {
 					p {
 						display: none;
 					}
-					// &:hover {
+					// &:active {
 					// 	p {
 					// 		display: block;
 					// 		padding-top: 4em;
@@ -228,7 +228,7 @@ body {
 					margin: 0;
 					li {
 						height: 3em;
-						&:hover {
+						&:active {
 							background: $dk_teal;
 						}
 					}
@@ -237,7 +237,7 @@ body {
 					p {
 						display: none;
 					}
-					&:hover {
+					&:active {
 						.nav-link {
 							display: none;
 						}
@@ -317,7 +317,7 @@ body {
 			a {
 				color: $teal;
 				text-decoration: none;
-				&:hover {
+				&:active {
 					text-decoration: underline;
 				}
 			}
@@ -358,7 +358,7 @@ body {
 				}
 				a {
 					text-decoration: none;
-					&:hover {
+					&:active {
 						color: rgb(17, 17, 17);
 					}
 				}
@@ -374,7 +374,7 @@ body {
 					-moz-osx-font-smoothing: grayscale;
 					float: left;
 					padding: 0 0.6em 0 0;
-					&:hover {
+					&:active {
 						color: rgb(17, 17, 17);
 					}
 				}
@@ -480,7 +480,7 @@ body {
 						font: 400 0.65em Helvetica;
 						margin-bottom: 0.5em;
 						li {
-							&:hover {
+							&:active {
 								color: $navBlack;
 								background-color: #fce598;
 								font-weight: bold;
@@ -525,7 +525,7 @@ body {
 			a {
 			  color: rgb(221, 221, 221);
 			  text-decoration: none;
-			  &:hover {
+			  &:active {
 			    color: $white;
 			    text-decoration: underline;
 			  }
@@ -548,7 +548,7 @@ body {
 			@include media($desktop) {
 		    	text-align: left;
 			}
-			&:hover {
+			&:active {
 				color: $teal;
 			}
 		}
@@ -589,7 +589,7 @@ body {
 				}
 			}
 			a {
-				&:hover {
+				&:active {
 					text-decoration: none;
 				}
 			}
