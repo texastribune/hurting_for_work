@@ -104,9 +104,9 @@ body {
 		}
 	}
 	.lead-four {
-		background-image: url(../images/leads/Cemetary-1.jpg);
+		background-image: url(../images/leads/Lead-Day-4.jpg);
 		@include media($desktop) {
-			background-image: url(../images/leads/Cemetary-1.jpg);
+			background-image: url(../images/leads/Lead-Day-4.jpg);
 		}
 	}
 	hr {
@@ -135,7 +135,10 @@ body {
 					background: $dk_teal;
 					margin-top: 0.25em;
 					&:active {
-						background: $dk_teal;;
+						background: $dk_teal;
+					}
+					&:hover {
+						background: $dk_teal;				
 					}
 					img {
 						display: none;
@@ -184,17 +187,6 @@ body {
 					p {
 						display: none;
 					}
-					// &:active {
-					// 	p {
-					// 		display: block;
-					// 		padding-top: 4em;
-					// 		position: absolute;
-					// 		background-color: $dk_gray;
-					// 		padding: 1em;
-					// 		width: 23.23176%;
-					// 		max-width: 253px;
-					// 	}
-					// }
 				}
 			}
 			a {
@@ -238,6 +230,18 @@ body {
 						display: none;
 					}
 					&:active {
+						.nav-link {
+							display: none;
+						}
+						p {
+							display: block;
+							color: $white;
+							font-weight: bold;
+							margin-top: 0;
+							padding-top: 0.8em;
+						}
+					}
+					&:hover {
 						.nav-link {
 							display: none;
 						}
@@ -320,6 +324,9 @@ body {
 				&:active {
 					text-decoration: underline;
 				}
+				&:hover {
+					text-decoration: underline;
+				}				
 			}
 			img {
 				width: 100%;
@@ -361,6 +368,9 @@ body {
 					&:active {
 						color: rgb(17, 17, 17);
 					}
+					&:hover {
+						color: rgb(17, 17, 17);
+					}
 				}
 				.fa {
 					color: #666;
@@ -375,6 +385,9 @@ body {
 					float: left;
 					padding: 0 0.6em 0 0;
 					&:active {
+						color: rgb(17, 17, 17);
+					}
+					&:hover {
 						color: rgb(17, 17, 17);
 					}
 				}
@@ -485,6 +498,11 @@ body {
 								background-color: #fce598;
 								font-weight: bold;
 							}
+							&:hover {
+								color: $navBlack;
+								background-color: #fce598;
+								font-weight: bold;
+							}
 						}
 					}
 				}
@@ -529,6 +547,10 @@ body {
 			    color: $white;
 			    text-decoration: underline;
 			  }
+			  &:hover {
+			    color: $white;
+			    text-decoration: underline;
+			  }
 			}
 			li {
 			  margin-bottom: 0.5em;
@@ -549,6 +571,9 @@ body {
 		    	text-align: left;
 			}
 			&:active {
+				color: $teal;
+			}
+			&:hover {
 				color: $teal;
 			}
 		}
@@ -590,6 +615,9 @@ body {
 			}
 			a {
 				&:active {
+					text-decoration: none;
+				}
+				&:hover {
 					text-decoration: none;
 				}
 			}
