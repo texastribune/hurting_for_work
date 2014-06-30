@@ -1,5 +1,5 @@
 html { 
-	-webkit-text-size-adjust: none;
+	-webkit-text-size-adjust: 100%;
 }
 body {
 	background-color: $white;
@@ -312,6 +312,9 @@ body {
 				a {
 					font-weight: bold;
 				}
+			}
+			p {
+				font-weight: normal;
 			}
 			hr.yellow {
 				border-top: 1px solid $yellow;
