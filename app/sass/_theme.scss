@@ -5,7 +5,15 @@ body {
 	background-color: $white;
 	overflow-x: hidden;
 }
-
+.container {
+	background: $white;
+	max-width: 100%;
+	color: $dk_gray;
+	font: 400 1.1em Georgia 100%;
+	line-height: 1.4em;
+	text-align: left;
+	overflow-x: hidden;
+}
 //Top HEADER
 .header-wrapper {
 	position: relative;
@@ -78,6 +86,7 @@ body {
 		}
 	}
 }
+//Lead Background Art settings, images
 .lead-image {
 	background-repeat: no-repeat;
 	height: 440px;
@@ -249,22 +258,6 @@ body {
 }
 
 
-.container {
-	background: $white;
-	max-width: 100%;
-	color: $dk_gray;
-	font: 400 1.1em Georgia 100%;
-	line-height: 1.4em;
-	text-align: left;
-	overflow-x: hidden;
-
-
-	hr {
-		border-top: 1px solid $yellow;
-		text-decoration: none;
-	}
-
-}
 
 .story-container {
 	max-width: 94%;
@@ -409,7 +402,7 @@ body {
 			margin: 0 0 0.5em 0;
 		}
 	}
-	.caption { //captions
+	.caption { 
 		color: $lt_gray;
 		font: 500 0.8em Helvetica;
 		text-align: left;
@@ -437,13 +430,10 @@ body {
 			text-align: left;
 			margin: 1em 0.5em;
 		}
-		@include media($mobile) {
-			margin-bottom: 1em;
-		}
 	}
 	.disclosure {
-		font: 500 0.95em helvetica; 
-		color: #888;
+		font: 500 0.9em helvetica; 
+		color: $lt_gray;
 	}
 	.about {
 		border-top: 1px solid $yellow;
@@ -462,43 +452,6 @@ body {
 			color: $lt_gray;
 		}
 	}
-	.worker-wall {
-		margin: 1em 0;
-		p.subtext {
-			color: rgb(34, 34, 34);
-			font: 300 0.9em helvetica; 
-			line-height: 1.4em; 
-			text-align: left; 
-			margin: 1em 0;
-		}
-		@include media($desktop) {
-			border-left: 1px solid $yellow;
-			border-top: 1px solid $yellow;
-			padding-left: 1.5em;
-		}
-		.worker-names {	
-			ul {
-				line-height: 1em;
-				list-style-type: none;
-				color: $lt_gray;
-				padding-left: 0;
-				font: 400 0.65em Helvetica;
-				margin-bottom: 0.5em;
-				li {
-					&:active {
-						color: $navBlack;
-						background-color: #fce598;
-						font-weight: bold;
-					}
-					&:hover {
-						color: $navBlack;
-						background-color: #fce598;
-						font-weight: bold;
-					}
-				}
-			}
-		}
-	}
 }
 .hide {
 	display: none;
@@ -506,7 +459,43 @@ body {
 .worker-faces {	
 	padding-left: 0.5em;
 }
-
+.worker-wall {
+	margin: 1em 0;
+	p.subtext {
+		color: rgb(34, 34, 34);
+		font: 300 0.9em helvetica; 
+		line-height: 1.4em; 
+		text-align: left; 
+		margin: 1em 0;
+	}
+	@include media($desktop) {
+		border-left: 1px solid $yellow;
+		border-top: 1px solid $yellow;
+		padding-left: 1.5em;
+	}
+	.worker-names {	
+		ul {
+			line-height: 1em;
+			list-style-type: none;
+			color: $lt_gray;
+			padding-left: 0;
+			font: 400 0.65em Helvetica;
+			margin-bottom: 0.5em;
+			li {
+				&:active {
+					color: $navBlack;
+					background-color: #fce598;
+					font-weight: bold;
+				}
+				&:hover {
+					color: $navBlack;
+					background-color: #fce598;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+}
 .footer {
 	background-color: rgb(34, 34, 34);
 	color: $white;
@@ -516,8 +505,7 @@ body {
 		width: 120px;
 		margin-top: 1em;
 	}
-
-	.app-container {
+	.footer-container {
 		text-align: center;
 		margin: auto;
 		div {
@@ -525,94 +513,94 @@ body {
 		    	text-align: left;
 			}
 		}
-		ul {
-			list-style: none;
-			padding: 0;
-			margin-top: 2em;
-			a {
-			  color: rgb(221, 221, 221);
-			  text-decoration: none;
-			  &:active {
-			    color: $white;
-			    text-decoration: underline;
-			  }
-			  &:hover {
-			    color: $white;
-			    text-decoration: underline;
-			  }
-			}
-			li {
-			  margin-bottom: 0.5em;
-			}			
+	}
+	ul {
+		list-style: none;
+		padding: 0;
+		margin-top: 2em;
+		a {
+		  color: rgb(221, 221, 221);
+		  text-decoration: none;
+		  &:active {
+		    color: $white;
+		    text-decoration: underline;
+		  }
+		  &:hover {
+		    color: $white;
+		    text-decoration: underline;
+		  }
 		}
-		.icon {
-			color: $white;
-			font-size: 1.5em;
-			display: inline-block;
-			font-family: FontAwesome;
-			font-style: normal;
-			font-weight: normal;
-			line-height: 1;
-			padding-right: 0.5em;
-			-webkit-font-smoothing: antialiased;
-			-moz-osx-font-smoothing: grayscale;
-			@include media($desktop) {
-		    	text-align: left;
+		li {
+		  margin-bottom: 0.5em;
+		}			
+	}
+	.icon {
+		color: $white;
+		font-size: 1.5em;
+		display: inline-block;
+		font-family: FontAwesome;
+		font-style: normal;
+		font-weight: normal;
+		line-height: 1;
+		padding-right: 0.5em;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		@include media($desktop) {
+	    	text-align: left;
+		}
+		&:active {
+			color: $teal;
+		}
+		&:hover {
+			color: $teal;
+		}
+	}
+	.internal-links {
+		li {
+		  &:last-child {
+			  	a {
+			  		color: $dk_teal;
+		  		}
+				}
+		}
+	}
+	.donate {
+		background: $dk_teal;
+		color: $white;
+		font-family: Helvetica;
+		padding: 0.25em 0;
+		ul {
+			margin: 1.5em 1.5em 0.75em 1.5em;
+			font-size: 1.65em;
+			line-height: 0.9em;
+			border-bottom: 1px solid $white;
+			letter-spacing: 0.03em;
+			li {
+				&:last-child {
+					background-color: $yellow;
+					color: rgb(34, 34, 34);
+					font: 700 0.5em Helvetica;
+					letter-spacing: 1px;
+					line-height: 1.4em;
+					text-align: center;
+					text-transform: uppercase;
+					margin: 1em 0 1.5em 0;
+					padding: 0.25em 0;
+					-moz-border-radius: 3px;
+					-webkit-border-radius: 3px;
+					}
 			}
+		}
+		a {
 			&:active {
-				color: $teal;
+				text-decoration: none;
 			}
 			&:hover {
-				color: $teal;
+				text-decoration: none;
 			}
 		}
-		.internal-links {
-			li {
-			  &:last-child {
-				  	a {
-				  		color: $dk_teal;
-			  		}
-	  			}
-			}
-		}
-		.donate {
-			background: $dk_teal;
-			color: $white;
-			font-family: Helvetica;
-			padding: 0.25em 0;
-			ul {
-				margin: 1.5em 1.5em 0.75em 1.5em;
-				font-size: 1.65em;
-				line-height: 0.9em;
-				border-bottom: 1px solid $white;
-				letter-spacing: 0.03em;
-				li {
-					&:last-child {
-						background-color: $yellow;
-						color: rgb(34, 34, 34);
-						font: 700 0.5em Helvetica;
-						letter-spacing: 1px;
-						line-height: 1.4em;
-						text-align: center;
-						text-transform: uppercase;
-						margin: 1em 0 1.5em 0;
-						padding: 0.25em 0;
-						-moz-border-radius: 3px;
-    					-webkit-border-radius: 3px;
-						}
-				}
-			}
-			a {
-				&:active {
-					text-decoration: none;
-				}
-				&:hover {
-					text-decoration: none;
-				}
-			}
-			@include media($desktop) {
-				padding: 0 0 1em 0;
-			}
+		@include media($desktop) {
+			padding: 0 0 1em 0;
 		}
 	}
 }
