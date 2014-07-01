@@ -38,7 +38,7 @@
 *********************************/
 .flexslider {margin: 0; padding: 0; clear: both;}
 .flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
-.flexslider .slides img {width: 100%; display: block; float: left; margin-bottom: 1em;}
+.flexslider .slides img {width: 60%; display: block; float: right; margin-bottom: 1em;}
 .flexslider .slides h4 {width: 100%; color: rgb(34, 34, 34); font: 700 1.9em Helvetica; text-align: center; margin: 1em 0.5em;}
 .flexslider .slides p {color: rgb(34, 34, 34); font: 300 1em helvetica; line-height: 1.4em; text-align: left; margin: 0.75em 0.5em 0 0.5em;}
 .flex-pauseplay span {text-transform: capitalize;}
