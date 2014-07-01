@@ -267,6 +267,7 @@ body {
 	margin-top: 1.5em;
 	margin-left: 0.5em;
 	text-align: left;
+	font-weight: normal;
 	h1 { //headline
 		color: $dk_gray;
 		font: 600 2em Helvetica;
@@ -296,7 +297,7 @@ body {
 	p {
 		font-weight: normal;
 		color: $dk_gray;
-		font: 500 1em Georgia;
+		font: 400 1em Georgia;
 		line-height: 1.4em;
 	}
 	hr.yellow {
