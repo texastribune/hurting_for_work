@@ -17,33 +17,38 @@ body {
 	vertical-align: middle;
 	text-align: center;
 	max-height: 640px;
-	.page-nav {
-		background-color: $navBlack;
-		height: 2.75em;
-		img {	
-			margin: 0 0.5em 0 0.5em;
-			max-height: 1.5em;
-		}
-		.investigates-logo {
-			display: none;
-			@include media($desktop) {
-				display: block;
-				margin-top: 0.75em;				
-				float: right;
-			}
-		}
-		.trib-logo {
-			margin-top: 0.25em;
-			float: none;
-			img {
-				margin-top: 0.5em;
-				max-height: 1.25em;
-			}
-			@include media($desktop) {
-				float: left;
-			}
+}
+.page-nav {
+	background-color: $navBlack;
+	height: 2.75em;
+	img {	
+		margin: 0 0.5em 0 0.5em;
+		max-height: 1.5em;
+	}
+	.investigates-logo {
+		display: none;
+		@include media($desktop) {
+			display: block;
+			margin-top: 0.75em;				
+			float: right;
 		}
 	}
+	.trib-logo {
+		margin-top: 0.25em;
+		float: none;
+		img {
+			margin-top: 0.5em;
+			max-height: 1.25em;
+		}
+		@include media($desktop) {
+			float: left;
+		}
+	}
+}
+//black bar behind the page-nav
+.page-nav-backdrop {
+	background-color: $navBlack;
+	height: 2.75em;
 }
 .title-container {
 	.title {
@@ -71,6 +76,176 @@ body {
 		}
 	}
 }
+.lead-image {
+	background-repeat: no-repeat;
+	height: 440px;
+	width: 100%;
+	background-position: center center;
+	background-color: $navBlack;						
+}
+.lead-one {
+	background-image: url(../images/leads/tt-workers-LeadArt-Todd-5.jpg);
+	@include media($desktop) {
+		background-image: url(../images/leads/tt-workers-LeadArt-Todd-5.jpg);
+	}
+}
+.lead-two {
+	background-image: url(../images/leads/Santiago.jpg);
+	@include media($desktop) {
+		background-image: url(../images/leads/Santiago-Single-Lead.jpg);
+	}
+}
+.lead-three {
+	background-image: url(../images/leads/Crystal-Mobile-Crash.jpg);
+	@include media($desktop) {
+		background-image: url(../images/leads/Crystal-Single-Lead.jpg);
+	}
+}
+.lead-four {
+	background-image: url(../images/leads/Lead-Day-4-mobile.jpg);
+	@include media($desktop) {
+		background-image: url(../images/leads/Lead-Day-4.jpg);
+	}
+}
+
+.nav-bar {
+	color: $white;
+	background: $white;
+	font: 500 0.8em Helvetica;
+	letter-spacing: 1px;
+	line-height: 1.2em;
+	text-align: center;
+	position: static;
+	.selected {
+		background: $lt_teal;
+	}
+	ul {
+		display: block;
+		list-style-type: none;
+		margin: 0;
+		width: 100%;
+		max-width: 1088px;
+		li {
+			background: $dk_teal;
+			margin-top: 0.25em;
+			&:active {
+				background: $dk_teal;
+			}
+			&:hover {
+				background: $dk_teal;				
+			}
+			img {
+				display: none;
+				@include media($desktop) {
+					display: block;
+					max-width: 100%;
+					width: 100%;
+					margin-top:0;
+				}
+			}
+			@include media($desktop) {
+				background: $white;
+				margin-top: 0;
+			}
+		}
+		.nav-link {
+			color: $dk_gray;
+			font-weight: bold;
+			width: 100%;
+			margin: 0.75em 0;
+		}
+		@include media($desktop) {
+			background: $white;
+		}	
+	}
+	.inactive {
+		li {
+			@include media($mobile) {
+				height: 5em;
+			}
+		}
+		p {	
+			display: block;
+			color: $white;
+			font-weight: bold;
+		}
+		@include media($desktop) {
+			p {
+				display: none;
+			}
+		}
+	}
+	a {
+		text-decoration: none;
+		text-shadow: none;
+	}
+}
+.nav-hide {
+	display: none;
+}
+.sticky {
+	visibility: hidden;
+	ul {
+		max-height: 0;
+	}
+	@include media ($desktop) {
+		visibility: visible;
+		position: fixed;
+		background: rgb(85, 85, 85);
+		max-height: 3em;
+		z-index: 99999;
+		top: 0px;
+		max-width: 1088px;
+		width:100%;
+		max-height: 3em;
+		bottom: 3em;
+		background: $white;
+		ul {
+			display: block;
+			list-style-type: none;
+			margin: 0;
+			li {
+				height: 3em;
+				&:active {
+					background: $dk_teal;
+				}
+			}
+		}
+		.inactive {
+			p {
+				display: none;
+			}
+			&:active {
+				.nav-link {
+					display: none;
+				}
+				p {
+					display: block;
+					color: $white;
+					font-weight: bold;
+					margin-top: 0;
+					padding-top: 0.8em;
+				}
+			}
+			&:hover {
+				.nav-link {
+					display: none;
+				}
+				p {
+					display: block;
+					color: $white;
+					font-weight: bold;
+					margin-top: 0;
+					padding-top: 0.8em;
+				}
+			}
+		}	
+	}
+
+}
+
+
+
 .container {
 	background: $white;
 	max-width: 100%;
@@ -79,195 +254,14 @@ body {
 	line-height: 1.4em;
 	text-align: left;
 	overflow-x: hidden;
-	.page-nav-backdrop {
-		background-color: $navBlack;
-		height: 2.75em;
-	}
-	.lead-image {
-		background-repeat: no-repeat;
-		height: 440px;
-		width: 100%;
-		background-position: center center;
-		background-color: $navBlack;						
-	}
-	.lead-one {
-		background-image: url(../images/leads/tt-workers-LeadArt-Todd-5.jpg);
-		@include media($desktop) {
-			background-image: url(../images/leads/tt-workers-LeadArt-Todd-5.jpg);
-		}
-	}
-	.lead-two {
-		background-image: url(../images/leads/Santiago.jpg);
-		@include media($desktop) {
-			background-image: url(../images/leads/Santiago-Single-Lead.jpg);
-		}
-	}
-	.lead-three {
-		background-image: url(../images/leads/Crystal-Mobile-Crash.jpg);
-		@include media($desktop) {
-			background-image: url(../images/leads/Crystal-Single-Lead.jpg);
-		}
-	}
-	.lead-four {
-		background-image: url(../images/leads/Lead-Day-4-mobile.jpg);
-		@include media($desktop) {
-			background-image: url(../images/leads/Lead-Day-4.jpg);
-		}
-	}
+
+
 	hr {
 		border-top: 1px solid $yellow;
 		text-decoration: none;
 	}
 	.story-wrapper {
-		.nav-bar {
-			color: $white;
-			background: $white;
-			font: 500 0.8em Helvetica;
-			letter-spacing: 1px;
-			line-height: 1.2em;
-			text-align: center;
-			position: static;
-			.selected {
-				background: $lt_teal;
-			}
-			ul {
-				display: block;
-				list-style-type: none;
-				margin: 0;
-				width: 100%;
-				max-width: 1088px;
-				li {
-					background: $dk_teal;
-					margin-top: 0.25em;
-					&:active {
-						background: $dk_teal;
-					}
-					&:hover {
-						background: $dk_teal;				
-					}
-					img {
-						display: none;
-						@include media($desktop) {
-							display: block;
-							max-width: 100%;
-							width: 100%;
-							margin-top:0;
-						}
-					}
-					@include media($desktop) {
-						background: $white;
-						margin-top: 0;
-					}
-				}
-				.nav-image {
-					width: 100%;
-					float: left;
-					margin-bottom: 0;
-					@include media($mobile) {
-							display: none;
-						}
-				}
-				.nav-link {
-					color: $dk_gray;
-					font-weight: bold;
-					width: 100%;
-					margin: 0.75em 0;
-				}
-				@include media($desktop) {
-					background: $white;
-				}	
-			}
-			.inactive {
-				li {
-					@include media($mobile) {
-						height: 5em;
-					}
-				}
-				p {	
-					display: block;
-					color: $white;
-					font-weight: bold;
-				}
-				@include media($desktop) {
-					p {
-						display: none;
-					}
-				}
-			}
-			a {
-				text-decoration: none;
-				text-shadow: none;
-			}
-		}
-		.nav-hide {
-			display: none;
-		}
-		.sticky {
-			visibility: hidden;
-			ul {
-				max-height: 0;
-			}
-			@include media ($desktop) {
-				visibility: visible;
-				position: fixed;
-				background: rgb(85, 85, 85);
-				max-height: 3em;
-				z-index: 99999;
-				top: 0px;
-				max-width: 1088px;
-				width:100%;
-				max-height: 3em;
-				bottom: 3em;
-				background: $white;
-				ul {
-					display: block;
-					list-style-type: none;
-					margin: 0;
-					li {
-						height: 3em;
-						&:active {
-							background: $dk_teal;
-						}
-					}
-				}
-				.inactive {
-					p {
-						display: none;
-					}
-					&:active {
-						.nav-link {
-							display: none;
-						}
-						p {
-							display: block;
-							color: $white;
-							font-weight: bold;
-							margin-top: 0;
-							padding-top: 0.8em;
-						}
-					}
-					&:hover {
-						.nav-link {
-							display: none;
-						}
-						p {
-							display: block;
-							color: $white;
-							font-weight: bold;
-							margin-top: 0;
-							padding-top: 0.8em;
-						}
-					}
-				}	
-			}
 
-		}
-		.nav-images {
-			height: 8em;
-		}
-		.margin-top {
-			margin-top: 1em;
-		}
 		.story-container {
 			max-width: 94%;
 			color: $offblack;
