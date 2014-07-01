@@ -5,6 +5,72 @@ body {
 	background-color: $white;
 	overflow-x: hidden;
 }
+
+.header-wrapper {
+	position: relative;
+	max-height: 640px;
+}
+.header-container {
+	position: absolute;
+	max-width: 100%;
+	display: block;
+	vertical-align: middle;
+	text-align: center;
+	max-height: 640px;
+	.page-nav {
+		background-color: $navBlack;
+		height: 2.75em;
+		img {	
+			margin: 0 0.5em 0 0.5em;
+			max-height: 1.5em;
+		}
+		.investigates-logo {
+			display: none;
+			@include media($desktop) {
+				display: block;
+				margin-top: 0.75em;				
+				float: right;
+			}
+		}
+		.trib-logo {
+			margin-top: 0.25em;
+			float: none;
+			img {
+				margin-top: 0.5em;
+				max-height: 1.25em;
+			}
+			@include media($desktop) {
+				float: left;
+			}
+		}
+	}
+}
+.title-container {
+	.title {
+		width: 100%;
+		h1 {
+			color: $white;
+			font-size: 3em;
+			line-height: 1.2em;
+			text-shadow: rgb(0, 0, 0) 3px 3px 0px;
+			font-family: Georgia;
+			margin: auto;
+			padding: 0.5em 0;
+			@include media($desktop) {
+				font-size: 5em;	
+			}
+		}
+		h2 {
+			color: $white;
+			font: 500 1.5em helvetica;
+			letter-spacing: 1px;
+			line-height: 1.3em;
+			text-align: center;
+			text-shadow: rgb(0, 0, 0) 2px 2px 0px;
+			margin: auto;
+		}
+	}
+}
 .container {
 	background: $white;
 	max-width: 100%;
@@ -13,70 +79,6 @@ body {
 	line-height: 1.4em;
 	text-align: left;
 	overflow-x: hidden;
-	.header-wrapper {
-		position: relative;
-		max-height: 640px;
-		.header-container {
-			position: absolute;
-			max-width: 100%;
-			display: block;
-			vertical-align: middle;
-			text-align: center;
-			max-height: 640px;
-			.page-nav {
-				background-color: $navBlack;
-				height: 2.75em;
-				img {	
-					margin: 0 0.5em 0 0.5em;
-					max-height: 1.5em;
-				}
-				.investigates-logo {
-					margin-top: 0.75em;				
-					float: right;
-					@include media($mobile) {
-						display: none;
-					}
-				}
-				.trib-logo {
-					margin-top: 0.25em;
-					float: left;
-					img {
-						margin-top: 0.5em;
-						max-height: 1.25em;
-					}
-					@include media($mobile) {
-						float: none;
-					}
-				}
-			}
-			.title-container {
-				.title {
-					width: 100%;
-					h1 {
-						color: $white;
-						font-size: 3em;
-						line-height: 1.2em;
-						text-shadow: rgb(0, 0, 0) 3px 3px 0px;
-						font-family: Georgia;
-						margin: auto;
-						padding: 0.5em 0;
-						@include media($desktop) {
-							font-size: 5em;	
-						}
-					}
-					h2 {
-						color: $white;
-						font: 500 1.5em helvetica;
-						letter-spacing: 1px;
-						line-height: 1.3em;
-						text-align: center;
-						text-shadow: rgb(0, 0, 0) 2px 2px 0px;
-						margin: auto;
-					}
-				}
-			}
-		}
-	}
 	.page-nav-backdrop {
 		background-color: $navBlack;
 		height: 2.75em;
