@@ -4,6 +4,7 @@ html {
 body {
 	background-color: $white;
 	overflow-x: hidden;
+	-webkit-font-smoothing: antialiased;
 }
 .container {
 	background: $white;
